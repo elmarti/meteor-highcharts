@@ -1,10 +1,13 @@
-**Highcharts packaged and Meteorized**
+## Highcharts packaged and Meteorized ##
+
 You can use the normal Highcharts system, or use the meteorized version below: 
-**Simply include the Highcharts template and pass it a custom helper**
+
+
+## Simply include the Highcharts template and pass it a custom helper ##
 
     {{>Highcharts getHighchartsData}}
 
-**Set the rerender and element data in the meteorSettings object**
+## Set the rerender and element data in the meteorSettings object ##
 
      getHighchartsData: function() {
             return {
