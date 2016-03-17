@@ -8,8 +8,9 @@ You can use the normal Highcharts system, or use the meteorized version below:
     {{>Highcharts getHighchartsData}}
 
 ## Set the rerender and element data in the meteorSettings object ##
+Meteor Settings is optional and if you do not specify and id, a random one will be generated.
 
-     getHighchartsData: function() {
+      getHighchartsData: function() {
             return {
                 chart: {
                     polar: true,
@@ -42,12 +43,13 @@ You can use the normal Highcharts system, or use the meteorized version below:
                 series: [{
                     showInLegend: false,
                     name: "",
-                    data: [12,13,254,24]
+                    data: [12, 13, 254, 24]
                 }],
-                meteorSettings:{
-                    responsive:false, 
-                    width:"123px",
-                    height:"123px"
+                meteorSettings: {
+                    responsive: true,
+                    width: "123px",
+                    height: "123px",
+                    id: "david"
                 }
             }
         }
